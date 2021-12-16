@@ -59,11 +59,9 @@ namespace WriteOff
         [Column(Name = "Reason")]
         public string Reason { get; set; }
 
-        [Column(Name = "Type")]
-        public string Type { get; set; }
 
-        [Column(Name = "F_WriteOff")]
-        public int F_WriteOff { get; set; }
+        [Column(Name = "F_Hardware")]
+        public int F_Hardware { get; set; }
 
         [Column(Name = "F_Employeer")]
         public int F_Employeer { get; set; }

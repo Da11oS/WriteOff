@@ -32,8 +32,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
@@ -58,9 +62,64 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEmployeer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeer.Designer.cs">
+      <DependentUpon>FormEmployeer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployeerAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeerAdd.Designer.cs">
+      <DependentUpon>FormEmployeerAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHardwareAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHardwareAdd.Designer.cs">
+      <DependentUpon>FormHardwareAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWriteOff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWriteOff.Designer.cs">
+      <DependentUpon>FormWriteOff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWriteOffAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWriteOffAdd.Designer.cs">
+      <DependentUpon>FormWriteOffAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="ProjectSingelton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WriteOff.cs" />
+    <Compile Include="FormHardwares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHardwares.Designer.cs">
+      <DependentUpon>FormHardwares.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormEmployeer.resx">
+      <DependentUpon>FormEmployeer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployeerAdd.resx">
+      <DependentUpon>FormEmployeerAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHardwareAdd.resx">
+      <DependentUpon>FormHardwareAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHardwares.resx">
+      <DependentUpon>FormHardwares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWriteOff.resx">
+      <DependentUpon>FormWriteOff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWriteOffAdd.resx">
+      <DependentUpon>FormWriteOffAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
